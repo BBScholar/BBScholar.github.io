@@ -26,14 +26,22 @@ header {
 	height: 45px;
 }
 
-
-header {
-	background-color:white;
-}
-
-
 .jumbotron {
 	margin-top: 15px;
-	background-image: url();
+	background-image: url('../images/image.jpg');
+	height: 600px;
+	background-size: cover;
+	background-position: center;
 }
 
+.jumbotron h2 {
+	color: white;
+}
+
+.jumbotron p {
+	color: white;
+}
+
+.a {
+	text-decoration: underline;
+}

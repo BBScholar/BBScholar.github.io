@@ -1,8 +1,14 @@
 header {
 	text-align: center;
+	width: 100%;
 }
+
 #title {
 	font-size: 50px;
+}
+
+.nav {
+	width: 100%;
 }
 
 .pages {
@@ -10,7 +16,17 @@ header {
 	color: white;
 	background-color: black;
 	border: 1px solid white;
+	height: 30px;
+	transition: height 1s;
 }
+
+.pages:hover {
+	color: white;
+	text-decoration: none;
+	height: 45px;
+}
+
+
 header {
 	background-color:white;
 }

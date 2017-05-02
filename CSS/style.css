@@ -50,3 +50,22 @@ header {
 .b {
 	width: 100%;
 }
+
+
+.img1 {
+	margin:  12.5px auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+#intro {
+	line-height: 40px;
+	font-size: 16px
+}
+
+
+
+
+
+

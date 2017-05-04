@@ -54,13 +54,22 @@ header {
 
 .img1 {
 	margin:  12.5px auto;
+}
 
+.maingal p {
+	text-align: center;
+	font-size: 20px;
 }
 
 
 #intro {
 	line-height: 40px;
 	font-size: 16px
+}
+
+.social {
+
+	height: 50px;
 }
 
 

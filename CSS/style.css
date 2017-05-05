@@ -68,7 +68,8 @@ header {
 }
 
 .social {
-
+	margin-right: auto;
+	margin-left: auto;
 	height: 50px;
 }
 

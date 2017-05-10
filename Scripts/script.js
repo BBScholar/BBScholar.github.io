@@ -1,14 +1,15 @@
 $(document).ready(function () {
-
-	$('.img1').mouseenter(function () {
-		console.log('hover');
-	})
-
+	
+	var dank_mode = false;
 	$('#dank').on('click', function () {
-		var val1 = $('#dank').val();
-		console.log(val1);
-		if (val1 === 'on') {
-			
+		if ($('#dank').is(":checked")) {
+  			var result = confirm('Enter this mode at your own risk! Do you wish to continue?');
+  			if (result) {
+  				console.log(true);
+
+  			} else {
+  				console.log(false);
+  			}
 		}
 	})
 

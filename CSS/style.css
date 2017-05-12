@@ -106,9 +106,57 @@ footer {
 
 }
 
-@keyframes large-font {
-	
+@keyframes sidetoside {
+	0%, 100% {
+		transform: translateX(0px);
+	}
+	33% {
+		transform: translateX(20px);
+	}
+	66% {
+		transform: translateX(-20px);
+	}
+
 }
+
+@keyframes font-up {
+	0% {
+		font-size: 16px;
+	}
+
+	33% {
+		font-size: 30px;
+	}
+
+	100% {
+		font-size: 16px;
+
+	}
+
+}
+
+@keyframes rainbow{
+  0%, 100%{
+    background-color: red;
+  }
+  10%, 90%{
+    background-color: orange;
+  
+  }
+    20%, 80%{
+    background-color: yellow;
+  }
+    30%, 70%{
+    background-color: green;
+  }
+    40%, 60%{
+    background-color: blue;
+  }
+    50%{
+    background-color: purple;
+  }
+}
+
 
 
 

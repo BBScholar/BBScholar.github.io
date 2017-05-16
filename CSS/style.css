@@ -28,7 +28,7 @@ header {
 
 .jumbotron {
 	margin-top: 15px;
-	background-image: url('../Images/Gallery/image.jpg');
+	background-image: url('../Images/gallery/image.jpg');
 	height: 600px;
 	background-size: cover;
 	background-position: center;

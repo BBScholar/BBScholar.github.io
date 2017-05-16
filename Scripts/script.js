@@ -1,4 +1,19 @@
 $(document).ready(function () {
+  $('.img1').mouseenter(function () {
+    $('.img1').css('filter', 'blur(1px)');
+    $('.img1').css('transform', 'scale(.8) rotate(10deg)')
+    $(this).css('transform', 'scale(1.2)');
+    $(this).css('filter', 'none');
+    $(this).css('z-index', '999');
+  })
+
+  $('.img1').mouseleave(function () {
+    $('.img1').css('filter', 'none');
+    $('.img1').css('transform', 'scale(1)');
+  })
+  
+
+
 
 	$('#dank').on('click', function () {
 		if ($('#dank').is(":checked")) {

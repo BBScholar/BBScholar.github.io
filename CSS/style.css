@@ -28,7 +28,7 @@ header {
 
 .jumbotron {
 	margin-top: 15px;
-	background-image: url('../Images/image.jpg');
+	background-image: url('../Images/Gallery/image.jpg');
 	height: 600px;
 	background-size: cover;
 	background-position: center;
@@ -55,6 +55,9 @@ header {
 .img1 {
 	margin:  12.5px auto;
 	transition: transform 0.5s linear;
+}
+.img2 {
+	transition: transform 1s ease-out;
 }
 
 .maingal p {

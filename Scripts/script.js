@@ -8,10 +8,18 @@ $(document).ready(function () {
   })
 
   $('.img1').mouseleave(function () {
+    $('.img1').css('z-index', '1');
     $('.img1').css('filter', 'none');
     $('.img1').css('transform', 'scale(1)');
   })
   
+  $('.img2').mouseenter(function () {
+    $(this).css('transform', 'scale(1.2)');
+  })
+
+   $('.img2').mouseleave(function () {
+    $(this).css('transform', 'scale(1)');
+  })
 
 
 

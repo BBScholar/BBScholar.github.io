@@ -64,6 +64,13 @@ header {
 	color: black;
 }
 
+.f {
+	text-align: center;
+}
+
+.e {
+	font-size: 20px;
+}
 
 .img1 {
 	margin:  12.5px auto;

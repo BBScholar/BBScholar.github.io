@@ -1,6 +1,7 @@
 $(document).ready(function () {
   $('.img1').mouseenter(function () {
-    $('.img1').css('filter', 'blur(1px)');
+    //blurs images that are not hovered over and emphasizes hovered
+     $('.img1').css('filter', 'blur(1px)');
     $('.img1').css('transform', 'scale(.8) rotate(10deg)')
     $(this).css('transform', 'scale(1.2)');
     $(this).css('filter', 'none');

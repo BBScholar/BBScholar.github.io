@@ -101,6 +101,11 @@ footer {
 	margin-top: 25px;
 }
 
+#canvas1 {
+	margin: 30px auto 30px auto;
+	background-color: black;
+}
+
 @keyframes rotate1 {
 	0% {
 		transform: rotate(0);

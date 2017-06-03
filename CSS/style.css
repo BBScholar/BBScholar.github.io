@@ -120,6 +120,27 @@ form {
 	margin-bottom: 25px;
 }
 
+textarea {
+	font-size: 12px;
+}
+
+#twitter {
+	color: black;
+	background-color: lightblue;
+	border-color: blue;
+	border-radius: 5px;
+	font-size: 25px;
+	width: 25%;
+	transition: all 1s;
+}
+
+#twitter:hover {
+	font-size: 35px;
+}
+
+.g {
+	text-align: center;
+}
 
 @keyframes rotate1 {
 	0% {

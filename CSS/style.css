@@ -142,13 +142,16 @@ textarea {
 	text-align: center;
 }
 
-.easter {
-	transition: color 1s;
+#easter1 {
+	transition: color 0.5s;
+	transition: background-color 0.5s
+}
+#easter1:hover {
+	background-color: black;
+	color: white;
 }
 
-.easter :hover {
-	color:blue;
-}
+
 
 @keyframes rotate1 {
 	0% {

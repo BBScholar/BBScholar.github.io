@@ -16,12 +16,24 @@ for (var i = 0; i < 5; i++) {
   }
 }
 
-$('#easter1').on('click', function () {
-  localStorage.E1 = 1;
-  alert('You found easter egg number 1');
-  clicked[0] = 1
-})
+function easter1 () {
+  console.log('easter 1');
+  alert('You found an Easter Egg');
+  clicked[0] = 1;
+  checkEaster();
+}
 
-
+function checkEaster () {
+  var count = 0
+  for (var i = 0; i < clicked.length; i++) {
+    if (clicked[i] == 1) {
+      count ++
+    }
+  }
+  if (count == 5) {
+    // unlocks easter eggs
+    
+  }
+}
 
 console.log(clicked);

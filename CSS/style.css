@@ -111,6 +111,15 @@ footer {
 	margin-right: auto;
 }
 
+label {
+	font-size: 25px;
+}
+
+form {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
 
 @keyframes rotate1 {
 	0% {
@@ -176,7 +185,7 @@ footer {
   }
   10%, 90%{
     background-color: orange;
-  
+
   }
     20%, 80%{
     background-color: yellow;
@@ -191,9 +200,3 @@ footer {
     background-color: purple;
   }
 }
-
-
-
-
-
-

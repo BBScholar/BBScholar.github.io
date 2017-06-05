@@ -151,6 +151,9 @@ textarea {
 	color: white;
 }
 
+canvas {
+	background-color: blue;
+}
 
 
 @keyframes rotate1 {

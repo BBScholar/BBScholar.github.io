@@ -2,8 +2,6 @@ var clicked = [];
 // 0 = Off
 // 1 = On
 
-
-
 clicked[0] = Number(localStorage.E1);
 clicked[1] = Number(localStorage.E2);
 clicked[2] = Number(localStorage.E3);

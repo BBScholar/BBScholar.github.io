@@ -14,10 +14,10 @@ for (var i = 0; i < 5; i++) {
   }
 }
 
-function easter1 () {
-  console.log('easter 1');
+function easter (number) {
+  console.log('easter ' + number);
   alert('You found an Easter Egg');
-  clicked[0] = 1;
+  clicked[number] = 1;
   checkEaster();
 }
 
@@ -25,7 +25,7 @@ function checkEaster () {
   var count = 0
   for (var i = 0; i < clicked.length; i++) {
     if (clicked[i] == 1) {
-      count ++
+      count++
     }
   }
   if (count == 5) {

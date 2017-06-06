@@ -101,9 +101,10 @@ footer {
 	margin-top: 35px;
 }
 
-#canvas1 {
+canvas {
 	margin: 30px auto 30px auto;
-	background-color: black;
+	text-align: center;
+	border: 80px solid black;
 }
 
 .portrait {

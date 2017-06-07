@@ -16,7 +16,7 @@ for (var i = 0; i < 5; i++) {
 
 function easter (number) {
   console.log('easter ' + number);
-  alert('You found an Easter Egg');
+  alert('You found an Easter Egg! Number ' + number + ' of ' + clicked.length);
   clicked[number] = 1;
   checkEaster();
 }
@@ -28,8 +28,9 @@ function checkEaster () {
       count++
     }
   }
-  if (count == 5) {
+  if (count == clicked.length) {
     // unlocks easter eggs
+    window.location = "https://bbscholar.github.io/holston.html";
     
   }
 }

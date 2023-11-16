@@ -4,8 +4,13 @@
     <head>
         <meta charset="UTF-8" />
         <title>Ben Scholar</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
         <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
 
         <style type="text/css">
             body {
@@ -15,14 +20,23 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                background-color: rgba(245, 245, 245);
-                width: 100%
+                background-color: rgb(204, 204, 204);
+                width: 100%;
+                /* height: 100%; */
+            }
+
+            h1 {
+                font-family: "Alice", serif;
+                font-size: 4em;
+                margin: 0;
+                margin-top: 1em;
             }
 
             #icons {
                 margin-left: auto;
                 margin-right: auto;
                 display: flex;
+                float: left;
             }
 
 
@@ -31,8 +45,10 @@
             }
 
             #icons img {
-                width: 32px;
-                height: 32px;
+                display:inline;
+                margin: 3em 5em 3em 5em;
+                min-width: 4em;
+                max-width: 5em;
             }
 
 
@@ -42,6 +58,7 @@
                 border-radius: 50%;
                 object-fit: cover;
                 aspect-ratio: 1/1;
+                margin: 2em 0em 2em 0em;
             }
 
             #resume_embed {
@@ -49,11 +66,15 @@
                 height: max-content;
             }
 
+            #resume_heading {
+                margin-bottom: 0;
+            }
+
         </style>
     </head>
 
     <body>
-        <h1 style="color: red;">Work in progress!</h1>
+        <h2 style="color: red;">Work in progress!</h2>
         <h1>Ben Scholar</h1>
 
         <div id="portrait">
@@ -64,25 +85,21 @@
             <p>Hi! I'm Ben Scholar (Yes that is my real last name).</p>
             <p>I am a recent Computer Engineering/Computer Science graduate from Case Western Reserve University.</p>
             <p>I hold strong interests in the fields of embedded software, robotics, and autonomy.</p>
+            <p>I am currently seeking a job in the San Francisco Bay Area or the Greater Boston Area (open to other locations). Contact me if you are interested! </p>
         </div>
 
-        <ul>
-            <li><a></a></li>
-        </ul>
+        <h2 id="resume_heading">Resume: </h2>
+        <!-- <p><b>View my current resume <a href="/CurrentResume.pdf">here</a>.</b></p>
 
-
-        <br>
-        <br>
-        <br>
-
-        <p>View my current resume <a href="/CurrentResume.pdf">here</a>.</p>
-        <p>Email me at <a href="mailto:benscholar@benscholar.com">benscholar@benscholar.com</a></p>
+        <object data="/CurrentResume.pdf" type="application/pdf" width="60%" height="1000px">
+            <p>This browser does not support inline PDFs. PLease download the PDF to view it. <a href="./CurrentResume.pdf">Download here.</a> </p>
+        </object> -->
 
         <div id="icons">
             <div id="github_logo"><a href="https://github.com/BBScholar"><img src="/img/github_logo.png" /></a></div>
             <div id="linkedin_logo"><a href="https://www.linkedin.com/in/bscholar"><img src="/img/linkedin_logo.png" /></a></div>
+            <div id="email_logo"><a href="mailto:benscholar@benscholar.com"><img src="/img/email_logo.png"/></a></div>
         </div>
 
-        <!-- <embed id="resume_embed" src="./CurrentResume.pdf" type="application/pdf"/> -->
     </body>
 </html>

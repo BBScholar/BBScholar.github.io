@@ -51,6 +51,10 @@
                 max-width: 5em;
             }
 
+            #portrait {
+                margin: 2em 0em 2em 0em;
+            }
+
 
             #portrait img {
                 /* width: 25%; */
@@ -58,7 +62,11 @@
                 border-radius: 50%;
                 object-fit: cover;
                 aspect-ratio: 1/1;
-                margin: 2em 0em 2em 0em;
+
+                border-color: black;
+                border-style: solid;
+                border-width: 2px;
+                box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
             }
 
             #resume_embed {
@@ -74,11 +82,11 @@
     </head>
 
     <body>
-        <h2 style="color: red;">Work in progress!</h2>
+        <!-- <h2 style="color: red;">Work in progress!</h2> -->
         <h1>Ben Scholar</h1>
 
         <div id="portrait">
-            <img src="/img/potrait.jpg" />
+            <img src="/img/portrait_v2.png" />
         </div>
 
         <div>
@@ -89,11 +97,11 @@
         </div>
 
         <h2 id="resume_heading">Resume: </h2>
-        <!-- <p><b>View my current resume <a href="/CurrentResume.pdf">here</a>.</b></p>
+        <p><b>Link to my current <a href="/CurrentResume.pdf">resume</a>.</b></p>
 
         <object data="/CurrentResume.pdf" type="application/pdf" width="60%" height="1000px">
             <p>This browser does not support inline PDFs. PLease download the PDF to view it. <a href="./CurrentResume.pdf">Download here.</a> </p>
-        </object> -->
+        </object>
 
         <div id="icons">
             <div id="github_logo"><a href="https://github.com/BBScholar"><img src="/img/github_logo.png" /></a></div>

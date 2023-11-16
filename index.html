@@ -4,12 +4,85 @@
     <head>
         <meta charset="UTF-8" />
         <title>Ben Scholar</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
+
         <style type="text/css">
+            body {
+                font-family: "Roboto";
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(245, 245, 245);
+                width: 100%
+            }
+
+            #icons {
+                margin-left: auto;
+                margin-right: auto;
+                display: flex;
+            }
+
+
+            #icons div {
+                flex-grow: 1;
+            }
+
+            #icons img {
+                width: 32px;
+                height: 32px;
+            }
+
+
+            #portrait img {
+                /* width: 25%; */
+                width: 20em;
+                border-radius: 50%;
+                object-fit: cover;
+                aspect-ratio: 1/1;
+            }
+
+            #resume_embed {
+                width: 50%;
+                height: max-content;
+            }
 
         </style>
     </head>
 
     <body>
-        <h1>Work in progress!</h1>
+        <h1 style="color: red;">Work in progress!</h1>
+        <h1>Ben Scholar</h1>
+
+        <div id="portrait">
+            <img src="/img/potrait.jpg" />
+        </div>
+
+        <div>
+            <p>Hi! I'm Ben Scholar (Yes that is my real last name).</p>
+            <p>I am a recent Computer Engineering/Computer Science graduate from Case Western Reserve University.</p>
+            <p>I hold strong interests in the fields of embedded software, robotics, and autonomy.</p>
+        </div>
+
+        <ul>
+            <li><a></a></li>
+        </ul>
+
+
+        <br>
+        <br>
+        <br>
+
+        <p>View my current resume <a href="/CurrentResume.pdf">here</a>.</p>
+        <p>Email me at <a href="mailto:benscholar@benscholar.com">benscholar@benscholar.com</a></p>
+
+        <div id="icons">
+            <div id="github_logo"><a href="https://github.com/BBScholar"><img src="/img/github_logo.png" /></a></div>
+            <div id="linkedin_logo"><a href="https://www.linkedin.com/in/bscholar"><img src="/img/linkedin_logo.png" /></a></div>
+        </div>
+
+        <!-- <embed id="resume_embed" src="./CurrentResume.pdf" type="application/pdf"/> -->
     </body>
 </html>

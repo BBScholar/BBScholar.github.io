@@ -42,7 +42,7 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
-    margin-top: 1.5rem;
+    margin-top: 0.75rem;
     border-bottom: 1px solid #eee;
     padding-bottom: 0.5rem;
 }
@@ -68,6 +68,10 @@ a:hover {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     padding: 2rem;
     margin-bottom: var(--section-spacing);
+}
+
+.resume-section.card {
+    padding-top: 1.25rem;
 }
 
 /* Profile section */
@@ -101,6 +105,7 @@ a:hover {
 .resume-section {
     margin-bottom: var(--section-spacing);
     text-align: center;
+    padding-top: 1rem;
 }
 
 .resume-link {

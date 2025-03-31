@@ -3,6 +3,7 @@
     --card-bg: #ffffff;
     --text-color: #333;
     --accent-color: #3498db;
+    --accent-hover: #2980b9;
     --section-spacing: 2rem;
     --border-color: #eee;
     --heading-color: #2c3e50;
@@ -15,6 +16,7 @@
     --card-bg: #252529;
     --text-color: #e0e0e0;
     --accent-color: #4ba3e3;
+    --accent-hover: #3a8cca;
     --border-color: #333338;
     --heading-color: #c5d3de;
     --social-icon-color: #c0c0c0;
@@ -73,7 +75,7 @@ a {
 }
 
 a:hover {
-    color: #2980b9;
+    color: var(--accent-hover);
     text-decoration: underline;
 }
 
@@ -135,7 +137,8 @@ a:hover {
 }
 
 .resume-link:hover {
-    background-color: #2980b9;
+    background-color: var(--accent-hover);
+    color: white;
     text-decoration: none;
 }
 

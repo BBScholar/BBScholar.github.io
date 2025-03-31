@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
-        <title>Ben Scholar</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ben Scholar | Engineer</title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
-        <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Jost:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-TT1D4X38CY"></script>
@@ -17,128 +16,233 @@
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-
             gtag('config', 'G-TT1D4X38CY');
         </script>
 
-        <style type="text/css">
+        <style>
+            :root {
+                --primary-bg: #f5f5f7;
+                --card-bg: #ffffff;
+                --text-color: #333;
+                --accent-color: #3498db;
+                --section-spacing: 2rem;
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
             body {
-                font-family: "Roboto";
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: rgb(204, 204, 204);
+                font-family: "Roboto", -apple-system, BlinkMacSystemFont, sans-serif;
+                line-height: 1.6;
+                color: var(--text-color);
+                background-color: var(--primary-bg);
+                max-width: 1000px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .container {
                 width: 100%;
+                padding: 2rem 0;
+            }
+
+            h1, h2, h3 {
+                font-family: "Jost", sans-serif;
+                font-weight: 300;
+                color: #2c3e50;
+                margin-bottom: 1rem;
             }
 
             h1 {
-                font-family: "Jost", sans-serif;
-                font-weight: 300;
-                font-size: 4em;
-                margin: 0;
-                margin-top: 1em;
+                font-size: 3.5rem;
+                margin-top: 2rem;
+                text-align: center;
             }
 
-            #icons {
-                margin-left: auto;
-                margin-right: auto;
+            h2 {
+                font-size: 1.8rem;
+                margin-top: 1.5rem;
+                border-bottom: 1px solid #eee;
+                padding-bottom: 0.5rem;
+            }
+
+            p {
+                margin-bottom: 1rem;
+            }
+
+            a {
+                color: var(--accent-color);
+                text-decoration: none;
+                transition: color 0.2s;
+            }
+
+            a:hover {
+                color: #2980b9;
+                text-decoration: underline;
+            }
+
+            .card {
+                background-color: var(--card-bg);
+                border-radius: 12px;
+                box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+                padding: 2rem;
+                margin-bottom: var(--section-spacing);
+            }
+
+            /* Profile section */
+            .profile {
                 display: flex;
-                float: left;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin-bottom: var(--section-spacing);
             }
 
-
-            #icons div {
-                flex-grow: 1;
-            }
-
-            #icons img {
-                display:inline;
-                margin: 3em 5em 3em 5em;
-                min-width: 4em;
-                max-width: 5em;
-            }
-
-            #portrait {
-                margin: 2em 0em 2em 0em;
-            }
-
-
-            #portrait img {
-                /* width: 25%; */
-                width: 20em;
+            .portrait {
+                width: 180px;
+                height: 180px;
                 border-radius: 50%;
                 object-fit: cover;
-                aspect-ratio: 1/1;
-
-                border-color: black;
-                border-style: solid;
-                border-width: 2px;
-                box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+                border: 3px solid white;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+                margin-bottom: 1.5rem;
             }
 
-            /* #intro p {
-                margin-left: 1em;
-                margin-right: 1em;
-                padding-left: 1em;
+            /* Introduction section */
+            .intro {
+                text-align: center;
+                width: 90%;
+                max-width: 900px;
+                margin: 0 auto var(--section-spacing) auto;
             }
 
-            #intro {
-                background-color: rgb(238, 238, 238);
-                border: 1px solid black;
-                border-radius: 10px;
-                box-shadow: 0 0 2px rgba(0, 0, 0, 0.8);
-            } */
-
-            /* #intro p { */
-                /* margin-left: 1em; */
-                /* margin-right: 1em; */
-            /* } */
-
-            #intro {
-                margin: 0 3em 0 3em;
+            /* Resume section */
+            .resume-section {
+                margin-bottom: var(--section-spacing);
+                text-align: center;
             }
 
-            #resume_embed {
-                width: 50%;
-                height: max-content;
+            .resume-link {
+                display: inline-block;
+                margin: 1rem 0;
+                padding: 0.6rem 1.2rem;
+                background-color: var(--accent-color);
+                color: white;
+                border-radius: 4px;
+                font-weight: 400;
+                transition: background-color 0.2s;
             }
 
-            #resume_heading {
-                margin-bottom: 0;
+            .resume-link:hover {
+                background-color: #2980b9;
+                text-decoration: none;
             }
 
+            .pdf-container {
+                width: 100%;
+                height: 800px;
+                border: 1px solid #eee;
+                border-radius: 4px;
+                margin-top: 1rem;
+            }
+
+            /* Social links */
+            .social-links {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+            }
+
+            .social-link {
+                font-size: 1.8rem;
+                color: #555;
+                transition: transform 0.2s, color 0.2s;
+            }
+
+            .social-link:hover {
+                transform: translateY(-3px);
+                color: var(--accent-color);
+            }
+
+            /* Footer */
+            footer {
+                text-align: center;
+                padding: 2rem 0;
+                color: #888;
+                font-size: 0.9rem;
+            }
+
+            /* Responsive adjustments */
+            @media (max-width: 768px) {
+                body {
+                    padding: 0 15px;
+                }
+                
+                h1 {
+                    font-size: 2.5rem;
+                }
+                
+                .card {
+                    padding: 1.5rem;
+                }
+                
+                .portrait {
+                    width: 150px;
+                    height: 150px;
+                }
+                
+                .pdf-container {
+                    height: 600px;
+                }
+            }
         </style>
     </head>
 
     <body>
-        <!-- <h2 style="color: red;">Work in progress!</h2> -->
-        <h1>Ben Scholar</h1>
+        <div class="container">
+            <div class="profile">
+                <h1>Ben Scholar</h1>
+                <img src="/img/portrait_v2.png" alt="Ben Scholar" class="portrait" />
+            </div>
 
-        <div id="portrait">
-            <img src="/img/portrait_v2.png" />
+            <div class="intro card">
+                <p>Hi! I'm Ben Scholar (Yes that is my real last name).</p>
+                <p>I am a recent Computer Engineering/Computer Science graduate from Case Western Reserve University.</p>
+                <p>I hold strong interests in the fields of embedded software, robotics, and real-time systems in general.</p>
+                <p>I am currently seeking a job in the San Francisco Bay Area or the Greater Boston Area (open to other locations). Contact me if you are interested!</p>
+            </div>
+
+            <div class="resume-section card">
+                <h2>Resume</h2>
+                
+                <object data="./Benjamin_Scholar_resume.pdf" type="application/pdf" class="pdf-container">
+                    <p>This browser does not support inline PDFs. Please <a href="./Benjamin_Scholar_resume.pdf">download the PDF</a> to view it.</p>
+                    <a href="./Benjamin_Scholar_resume.pdf" class="resume-link" download>
+                        <i class="fa-solid fa-download"></i> Download Resume (PDF)
+                    </a>
+                </object>
+            </div>
+
+            <div class="social-links">
+                <a href="https://github.com/BBScholar" class="social-link" aria-label="GitHub Profile">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/bscholar" class="social-link" aria-label="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="mailto:benscholar@benscholar.com" class="social-link" aria-label="Email Me">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+            <footer>
+                &copy; 2025 Ben Scholar
+            </footer>
         </div>
-
-        <div id="intro">
-            <p>Hi! I'm Ben Scholar (Yes that is my real last name).</p>
-            <p>I am a recent Computer Engineering/Computer Science graduate from Case Western Reserve University.</p>
-            <p>I hold strong interests in the fields of embedded software, robotics, and real-time systems in general.</p>
-            <p>I am currently seeking a job in the San Francisco Bay Area or the Greater Boston Area (open to other locations). Contact me if you are interested! </p>
-        </div>
-
-        <h2 id="resume_heading">Resume: </h2>
-        <p><b>Link to my current <a href="/Benjamin_Scholar_resume.pdf">resume</a>.</b></p>
-
-        <object data="/Benjamin_Scholar_resume.pdf" type="application/pdf" width="60%" height="1000px" style="display: block;">
-            <p>This browser does not support inline PDFs. PLease download the PDF to view it. <a href="./Benjamin_Scholar_resume.pdf">Download here.</a> </p>
-        </object>
-
-        <div id="icons">
-            <div id="github_logo"><a href="https://github.com/BBScholar"><img src="/img/github_logo.png" /></a></div>
-            <div id="linkedin_logo"><a href="https://www.linkedin.com/in/bscholar"><img src="/img/linkedin_logo.png" /></a></div>
-            <div id="email_logo"><a href="mailto:benscholar@benscholar.com"><img src="/img/email_logo.png"/></a></div>
-        </div>
-
     </body>
 </html>
